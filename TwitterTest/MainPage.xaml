@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,0,-97">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
@@ -28,6 +28,8 @@
             <!--ここにコントロールを入れる-->
         </StackPanel>
         <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="209" Margin="10,9.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="620"/>
-        <Button x:Name="btnTest" Content="Button" HorizontalAlignment="Left" Margin="281,239.667,0,0" Grid.Row="1" VerticalAlignment="Top" Click="btnTest_Click"/>
+        <Button x:Name="BtnTest" Content="Button" HorizontalAlignment="Left" Margin="281,239.667,0,0" Grid.Row="1" VerticalAlignment="Top" Click="BtnTest_Click"/>
+        <TextBox x:Name="TextSend" HorizontalAlignment="Left" Height="36" Margin="139,293.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="340"/>
+        <Button x:Name="ButtonSend" Content="Button" HorizontalAlignment="Left" Margin="281,334.667,0,0" Grid.Row="1" VerticalAlignment="Top" Click="ButtonSend_Click"/>
     </Grid>
 </Page>

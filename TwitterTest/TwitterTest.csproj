@@ -130,6 +130,9 @@
     <PackageReference Include="CoreTweet">
       <Version>0.8.0.384</Version>
     </PackageReference>
+    <PackageReference Include="CoreTweet.Streaming.Reactive">
+      <Version>0.6.0.251</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>5.4.0</Version>
     </PackageReference>
