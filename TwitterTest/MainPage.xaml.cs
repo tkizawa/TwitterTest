@@ -26,5 +26,10 @@ namespace TwitterTest
         {
             this.InitializeComponent();
         }
+
+        private void btnTest_Click(object sender, RoutedEventArgs e)
+        {
+            txtResult.Text = "Hello World!!";
+        }
     }
 }

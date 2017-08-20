@@ -8,7 +8,26 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid HorizontalAlignment="Left" Height="340" Margin="0,10,0,0" VerticalAlignment="Top" Width="630"/>
-
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <StackPanel x:Name="HeaderPanel"
+            Orientation="Horizontal"
+            Grid.Row="0">
+            <TextBlock x:Name="Header"
+                Text="twitter Test"
+                VerticalAlignment="Center"
+                Style="{ThemeResource HeaderTextBlockStyle}"
+                Margin="10,0,0,0"/>
+        </StackPanel>
+        <StackPanel Orientation="Vertical"
+                    VerticalAlignment="Center"
+                    HorizontalAlignment="Center"
+                    Grid.Row="1">
+            <!--ここにコントロールを入れる-->
+        </StackPanel>
+        <TextBox x:Name="txtResult" HorizontalAlignment="Left" Height="209" Margin="10,9.667,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="620"/>
+        <Button x:Name="btnTest" Content="Button" HorizontalAlignment="Left" Margin="281,239.667,0,0" Grid.Row="1" VerticalAlignment="Top" Click="btnTest_Click"/>
     </Grid>
 </Page>
